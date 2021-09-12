@@ -1,0 +1,17 @@
+#teleprompter {
+    transition: all .2s
+}
+
+#teleprompter span {
+    transition: all .15s;
+    display: inline-block
+}
+
+#teleprompter span:hover {
+    cursor: pointer;
+    transform: scale(.95);
+    opacity: .75
+}
+.highlighted {
+    opacity: .25
+}

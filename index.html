@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Mobile Specific Meta Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<title>Free Voice Activated Teleprompter Software [Updated for 2021]</title>
+
+		<meta name="author" content="Teleprompter Mirror">
+		<meta name="description" content="Voice activated teleprompter software scrolls your script automatically as you talk. Works in Chrome on PC, Mac, and Android.">
+
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+		<link rel="stylesheet" href="css/style.css?v=0.6.1">
+		<link href="/css/added-style.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/650710d258.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+  		<link rel="stylesheet" href="css/added-style.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8235067-2"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-8235067-2');
+			</script>
+			<style>
+				a {
+				  color: #ffffff;
+				  text-decoration: none;
+				}
+				a:visited {
+				  color: #ffffff;
+				  text-decoration: none;
+				}
+				a:hover, a:active, a:focus {
+				  color:#add8e6;
+				  text-decoration: none;
+				}
+				
+				</style>
+		<link rel="shortcut icon" href="teleprompter-favicon.ico">
+
+
+
+	</head>
+	<body id="gui">
+		<header>
+			<h1><!--<a title="Back To Online Teleprompter (Turn off voice scrolling)" href="https://telepromptermirror.com/telepromptersoftware.htm"><i style="color:lightgreen" class="fal fa-microphone active"></i></a>-->
+			
+			
+			
+			
+			<!--<i class="fal fa-clock play"></i>--> <span style="color:lightgreen" class="clock">00:00:00</span></h1>
+			<nav>
+                <div class="buttons">
+				<a title="Back To Online Teleprompter (Turn off voice scrolling)" href="https://telepromptermirror.com/telepromptersoftware.htm" class="button small fal fa-external-link-alt"></a>
+				<a class="button small fal fa-text-width flipx" title="Mirror Flip" href="#" onclick="return false;"></a>
+					<a class="button small fal fa-text-height flipy" title="Flip Vertical" href="#" onclick="return false;"></a>
+					<a class="button fal fa-undo reset active" title="Rewind To Start" href="#" onclick="return false;"></a>
+					<a class="button fal fa-folder-open open active" title="Load Text File" href="#" onclick="return false;"></a>
+					<a class="button fal fa-save save active" title="Save To File" href="#" onclick="return false;"></a>					
+					<a class="button fal fa-file-plus trash active" title="New Script" href="#" onclick="return false;"></a>
+					<a style="color:lightgreen" class="button icon-play play active" title="Start/Pause" href="#" onclick="return false;"></a>					
+					<span style="display: none;"><input type='file' class="load-file" accept='.txt' onchange='openFile(event)'></span>
+				</div>
+				<div class="sliders">
+					<label class="font_size_label">Size <span>(60)</span>:&nbsp; <div class="font_size slider"></div></label><br>
+				</div>
+                <div class="colors">
+                    <input id="text-color-picker" class="color {hash:true,caps:true,valueElement:'text-color'}"><input type="hidden" id="text-color" value="#ffffff"><label>Font Color</label>
+                    <input id="background-color-picker" class="color {hash:true,caps:true,valueElement:'background-color'}"><input type="hidden" id="background-color" value="#141414"><label>BG Color</label>
+				</div>
+			</nav>
+		</header>
+		<article>
+			<div class="">
+				<div class="top"></div>
+				<div class="bottom"></div>
+			</div>
+			<section spellcheck="false" class="teleprompter" id="teleprompter000" contenteditable>
+			</section>
+			<i class="icon-play marker"></i>
+		</article>
+		<footer>
+
+		</footer>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js/jquery.timer.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+        <script src="js/jscolor.js"></script>
+		<script src="js/speech.js"></script>
+		<script src="js/script.js?v=0.6.2"></script>
+	</body>
+</html>
